@@ -1,0 +1,31 @@
+.page {
+    background-color: rgb(255, 255, 255);
+    /* width: 600px; */
+    height: 700px;
+}
+.page-title {
+    padding-top: 15%;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #16195a;
+    text-align: center;
+}
+.page-desc {
+    margin-top: -10px;
+    font-size: large;
+    color: #424693;
+    text-align: center;
+    vertical-align: middle;
+}
+.click {
+    text-align: center;
+    margin-left: 47%;
+    width: 80px;
+    position: fixed;
+    height: 35px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 22, 111);
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+}

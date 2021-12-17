@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Redirect } from 'react-router-dom';
+import React, { Suspense, lazy, Fragment } from 'react';
+import Loader from 'react-js-loader'
+
+const Main = lazy(() => import('../src/Layout/Base'));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className="App">
+        <Suspense fallback={
+          <div className="loader-container">
+            <div className="loader-container-inner">
+              <div className="text-center">
+                <Loader type="semi-circle-spin" />
+              </div>
+            </div>
+          </div>
+        }>
+            <Route path="/main" component={Main} />
+        </Suspense>
+
+            <Route exact path="/" render={() => (
+              <Redirect to="/main/home" />
+            )} />
+      </div>
+    </Fragment>
   );
 }
 
