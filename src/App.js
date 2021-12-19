@@ -19,7 +19,10 @@ function App() {
         }>
             <Route path="/main" component={Main} />
         </Suspense>
-
+            {/* path="/" itu sebenernya direct kemana? kalau pake yg v6 
+            ada warning gini,
+            Matched leaf route at location "/" does not have an element. 
+             */}
             <Route exact path="/" render={() => (
               <Redirect to="/main/home" />
             )} />

@@ -41,6 +41,7 @@ const LayoutStyles = makeStyles((theme) => ({
       drawerPaper: {
         position: 'relative',
         whiteSpace: 'nowrap',
+        background: 'linear-gradient(45deg, #101c3e 30%, #34496a 90%)',
         width: drawerWidth,
         transition: theme.transitions.create('width', {
           easing: theme.transitions.easing.sharp,

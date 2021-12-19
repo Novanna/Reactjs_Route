@@ -78,6 +78,7 @@ function FormInput() {
     }
     return(
         <>
+        <div className='base'>
         <div className='card'>
             <form className='form-group'>
                 <div className='form-label'>Name</div>
@@ -168,6 +169,7 @@ function FormInput() {
             >
                 Reset
             </button>
+        </div>
         </div>
 
         <Modal

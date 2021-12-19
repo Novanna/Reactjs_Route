@@ -16,6 +16,7 @@ const LayoutStyles = makeStyles((theme) =>({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
         }),
+        background: 'linear-gradient(45deg, #101c3e 30%, #34496a 90%)',
     },
     appBarShift: {
         marginLeft: drawerWidth,
@@ -33,6 +34,7 @@ const LayoutStyles = makeStyles((theme) =>({
     },
     title: {
         flexGrow: 100,
+        marginLeft: 20,
     },
     appBarSpacer: theme.mixins.toolbar,
     content: {
